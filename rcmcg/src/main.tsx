@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import './components/header/header.css'
+import './components/article/article.css'
 import App from './pages/App.tsx'
 import {BrowserRouter, Route, Routes} from "react-router";
 import Blog from "./pages/Blog.tsx";

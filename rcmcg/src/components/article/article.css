@@ -1,0 +1,16 @@
+._article > h3 {
+    text-align: center;
+    margin: 0;
+    font-family: jetbrains, monospace;
+}
+
+.article-date {
+    text-align: center;
+    font-size: 14px;
+    font-family: jetbrains, monospace;
+}
+
+._article > article {
+    font-size: 16px;
+    margin: 10px 20px;
+}
