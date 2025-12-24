@@ -1,0 +1,36 @@
+@font-face {
+    font-family: jetbrains;
+    src: url("./fonts/jetbrains/JetBrainsMono-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: jetbrains;
+    src: url("./fonts/jetbrains/JetBrainsMono-Bold.woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: jetbrains;
+    src: url("./fonts/jetbrains/JetBrainsMono-Thin.woff2");
+    font-weight: 100;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+    background-color: #1a1b1e;
+}
+
+h1 {
+    font-family: jetbrains, monospace;
+    text-transform: uppercase;
+    margin: 10px;
+    color: white;
+}
+
+body {
+    margin: 0;
+}

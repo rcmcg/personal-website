@@ -3,7 +3,7 @@ function App() {
 
   return (
     <>
-      <div>rcmcg</div>
+      <h1>rcmcg</h1>
     </>
   )
 }
