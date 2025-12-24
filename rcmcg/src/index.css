@@ -19,10 +19,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Plus Jakarta Sans";
+}
+
 html {
     height: 100%;
     background-color: #1a1b1e;
-    color: white
+    color: white;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 h1 {
@@ -30,8 +35,13 @@ h1 {
     margin: 10px;
 }
 
+h2 {
+    font-family: jetbrains, monospace;
+}
+
 body {
     margin: 0;
+    height: 100%;
 }
 
 .header {
@@ -50,4 +60,11 @@ body {
 
 .header > h1 {
     font-weight: normal;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    height: 100%;
 }

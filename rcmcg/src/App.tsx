@@ -13,11 +13,23 @@ function Header() {
   )
 }
 
+function Body() {
+  return (
+    <>
+      <div className={"main"}>
+        <h2>WIP</h2>
+        <div>ETA: whenever</div>
+      </div>
+    </>
+  )
+}
+
 function App() {
 
   return (
     <>
       <Header />
+      <Body />
     </>
   )
 }
