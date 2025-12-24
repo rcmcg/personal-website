@@ -45,10 +45,22 @@ body {
 }
 
 .header {
-    display: flex;
-    align-items: end;
     font-family: jetbrains, monospace;
     text-transform: uppercase;
+}
+
+.header-first-line {
+    display: flex;
+    align-items: end;
+}
+
+.header-first-line > div {
+    font-size: 12px;
+}
+
+.header-second-line {
+    display: flex;
+    margin-left: 10px;
 }
 
 .header-item {
