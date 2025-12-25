@@ -1,0 +1,45 @@
+.terminal {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.terminal-top-bar {
+    background-image: linear-gradient(to bottom, rgb(65, 66, 67), rgb(54, 54, 55));
+    height: 10%;
+    border-radius: 5px 5px 0 0;
+}
+
+.terminal-buttons {
+    display: flex;
+    margin: 5px 0 0 5px;
+}
+
+.terminal-button {
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    margin-right: 5px;
+}
+
+.terminal-button-red {
+    background-color: rgb(237, 106, 94);
+}
+
+.terminal-button-yellow {
+    background-color: rgb(245, 191, 79);
+}
+
+.terminal-button-green {
+    background-color: rgb(98, 197, 84);
+}
+
+.terminal-main {
+    font-family: "iosevka", monospace;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
