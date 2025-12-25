@@ -7,9 +7,7 @@ function Header() {
       <div className={"header-container margin"}>
         <div className={"header header-first-line"}>
           <h1>rcmcg</h1>
-          <div className={"header-item"}>vancouver</div>
-          <div className={"header-item"}>visier</div>
-          <div className={"header-item"}>sfu</div>
+          <div className={"header-item"}>vancouver visier sfu</div>
         </div>
         <div className={"header header-second-line"}>
           <NavLink to={"/"}>

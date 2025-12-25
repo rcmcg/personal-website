@@ -3,6 +3,10 @@
     text-transform: uppercase;
 }
 
+.header > h1 {
+    margin: 0 4px 0 0;
+}
+
 .header-first-line {
     display: flex;
     align-items: end;
@@ -15,6 +19,20 @@
 
 .header-second-line {
     display: flex;
+}
+
+@media screen and (width > 600px) {
+    .header-first-line {
+        justify-content: center;
+    }
+
+    .header-second-line {
+        justify-content: center;
+    }
+
+    .header-item {
+        padding-right: 32px;
+    }
 }
 
 .header-item {
