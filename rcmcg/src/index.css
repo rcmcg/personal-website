@@ -67,3 +67,13 @@ a {
     color: white;
     text-decoration: none;
 }
+
+.margin {
+    margin: 0 16em 0 16em;
+}
+
+@media screen and (width <= 600px) {
+    .margin {
+        margin: 0;
+    }
+}
