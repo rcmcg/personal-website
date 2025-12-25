@@ -5,10 +5,12 @@ function Blog() {
   return (
     <>
       <Header />
-      <Article
-        title={"init"}
-        date={"December 24th, 2025"}
-      />
+      <div className={"margin"}>
+        <Article
+          title={"init"}
+          date={"December 24th, 2025"}
+        />
+      </div>
     </>
   )
 }

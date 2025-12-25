@@ -5,7 +5,7 @@ import TerminalWindow from "../components/terminal-window/TerminalWindow.tsx";
 function Body() {
   return (
     <>
-      <div className={"main"}>
+      <div className={"margin main"}>
         <h2>WIP</h2>
         <div>ETA: whenever</div>
       </div>
@@ -19,7 +19,9 @@ function App() {
     <>
       <Header />
       <Body />
-      <TerminalWindow />
+      <div className={"margin"}>
+        <TerminalWindow />
+      </div>
     </>
   )
 }
