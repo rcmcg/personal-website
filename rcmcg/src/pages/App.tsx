@@ -1,4 +1,5 @@
 import Header from "../components/header/Header.tsx";
+import TerminalWindow from "../components/terminal-window/TerminalWindow.tsx";
 
 
 function Body() {
@@ -18,6 +19,7 @@ function App() {
     <>
       <Header />
       <Body />
+      <TerminalWindow />
     </>
   )
 }
