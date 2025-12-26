@@ -10,6 +10,7 @@ import {BrowserRouter, Route, Routes} from "react-router";
 import BlogListing from "./pages/BlogListing.tsx";
 import Projects from "./pages/Projects.tsx";
 import ArticlePage from "./pages/ArticlePage.tsx";
+import PhotosPage from "./pages/PhotosPage.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path={"/projects"} element={<Projects />}/>
         <Route path={"/blog"} element={<BlogListing />}/>
         <Route path={"/blog/:articleId"} element={<ArticlePage />}/>
+        <Route path={"/photos"} element={<PhotosPage />}/>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
