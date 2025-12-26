@@ -5,7 +5,8 @@ function Body() {
   return (
     <>
       <div className={"viewing-margin main"}>
-        <h2 className={"home-hello"}>Hello!</h2>
+        <h2 className={"home-hello"}>Reece McGowan</h2>
+        <h3 className={"typewriter"}>Software Developer</h3>
       </div>
     </>
   )
