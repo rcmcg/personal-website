@@ -6,7 +6,35 @@ function Body() {
     <>
       <div className={"viewing-margin main"}>
         <h2 className={"home-hello"}>Reece McGowan</h2>
+        <div className={"headshot"}>
+          <img
+            src="../../public/assets/headshot.jpeg"
+            alt="Headshot of Reece McGowan"
+          />
+        </div>
         <h3 className={"typewriter"}>Software Developer</h3>
+        <h4>Vancouver, BC.</h4>
+        <article className={"about text"}>
+          <div className={"about-title"}>
+            <h3>About</h3>
+          </div>
+          <p>
+            My name is Reece McGowan.
+          </p>
+          <p>
+            I am a software developer currently working at Visier in beautiful
+            British Columbia. My work currently involves full-stack implementation of workflows leveraging
+            Generative AI.
+          </p>
+          <p>
+            Previously, I worked on Visier's ETL technology, maintaining and improving the transformation phase. My
+            notable contributions are a de-identification tool to scrub entities from source data, dramatic reductions
+            in batch processing job times, and data visualization for internal stakeholders.
+          </p>
+          <p>
+            Outside of programming, I enjoy cycling, video games, and coffee.
+          </p>
+        </article>
       </div>
     </>
   )
