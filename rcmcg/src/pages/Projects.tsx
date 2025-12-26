@@ -4,7 +4,7 @@ function Projects() {
   return (
     <>
       <Header />
-      <div className={"margin"}>
+      <div className={"viewing-margin"}>
         <h2>Projects</h2>
       </div>
     </>

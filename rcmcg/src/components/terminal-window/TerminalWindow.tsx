@@ -10,12 +10,15 @@ function TerminalWindow() {
           </div>
         </div>
         <div className={"terminal-main"}>
-          <div>Last login: Thu Dec 25 08:16:20</div>
-          <div>rcmcg@M46fedX ~ $ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus, augue ac consequat consequat,
-            nibh justo interdum enim, in dapibus lacus felis at dolor. Nulla tincidunt purus eu vestibulum dictum. Duis
-            posuere tortor at arcu venenatis ultrices.
+          <div>title: init</div>
+          <div>created on: Thu Dec 24 08:16:20</div>
+          <br/>
+          <div>rcmcg@M46fedX ~ $</div>
+          <div>
+            Welcome to my website! I've always wanted one but I've never taken the plunge. Why? Well, perfectionism
+            (read: ego). Putting something out into the world means being rejected and ...
           </div>
-          <div>rcmcg@M46fedX ~ $ continue reading...</div>
+          <div>rcmcg@M46fedX ~ $ <a href={"/blog/-1"}>continue reading...</a></div>
         </div>
       </div>
     </>

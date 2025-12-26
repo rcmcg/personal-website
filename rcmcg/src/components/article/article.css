@@ -9,9 +9,9 @@
     text-align: center;
     font-size: 14px;
     font-family: jetbrains, monospace;
+    margin-bottom: 16px;
 }
 
-._article > article {
-    font-size: 16px;
-    margin: 10px 20px;
+._article {
+    padding-bottom: 16px;
 }
