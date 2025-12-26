@@ -19,6 +19,9 @@ function Header() {
           <NavLink to={"/blog"}>
             <div className={"header-item"}>blog</div>
           </NavLink>
+          <NavLink to={"/photos"}>
+            <div className={"header-item"}>photos</div>
+          </NavLink>
         </div>
       </div>
     </>
