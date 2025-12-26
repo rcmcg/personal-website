@@ -8,7 +8,7 @@ function Body() {
         <h2 className={"home-hello"}>Reece McGowan</h2>
         <div className={"headshot"}>
           <img
-            src="../../public/assets/headshot.jpeg"
+            src="/assets/headshot.jpeg"
             alt="Headshot of Reece McGowan"
           />
         </div>
