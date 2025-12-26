@@ -1,10 +1,11 @@
-import {useParams} from "react-router";
+// import {useParams} from "react-router";
 import Header from "../components/header/Header.tsx";
 import Article from "../components/article/Article.tsx";
 
 function ArticlePage() {
-  const params = useParams();
-  const articleId = params.articleId;
+  // TOOD: Use when fetching article from backend
+  // const params = useParams();
+  // const articleId = params.articleId;
 
   return (
     <>
