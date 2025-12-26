@@ -4,7 +4,7 @@ function Header() {
 
   return (
     <>
-      <div className={"header-container margin"}>
+      <div className={"header-container viewing-margin"}>
         <div className={"header header-first-line"}>
           <h1>rcmcg</h1>
           <div className={"header-item"}>vancouver visier sfu</div>

@@ -39,6 +39,7 @@
 .terminal-main {
     font-family: "iosevka", monospace;
     font-size: 14px;
+    font-weight: 300;
     display: flex;
     flex-direction: column;
     height: 100%;

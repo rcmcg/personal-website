@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <Header />
-      <div className={"margin"}>
+      <div className={"viewing-margin"}>
         <h2>About me</h2>
       </div>
     </>
