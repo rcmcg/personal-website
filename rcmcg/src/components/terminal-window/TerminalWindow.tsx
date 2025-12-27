@@ -10,15 +10,20 @@ function TerminalWindow() {
           </div>
         </div>
         <div className={"terminal-main ibm-plex-mono-regular"}>
-          <div>title: init</div>
-          <div>created on: Thu Dec 24 08:16:20</div>
-          <br/>
-          <div>rcmcg@M46fedX ~ $</div>
           <div>
-            Welcome to my website! I've always wanted one but I've never taken the plunge. Why? Well, ego.
-            Putting something out into the world means being judged and ...
+            <div>title: init</div>
+            <div>created on: Thu Dec 24 08:16:20</div>
+            <br/>
+            <div>rcmcg@M46fedX ~ $</div>
+            <div>
+              Welcome to my website! I've always wanted one but I've never taken the plunge. Why? Well, ego.
+              Putting something out into the world means being judged and ...
+            </div>
+            <br/>
           </div>
-          <div>rcmcg@M46fedX ~ $ <a href={"/blog/-1"}>continue reading...</a></div>
+          <div>
+            <div>rcmcg@M46fedX ~ $ <a href={"/blog/-1"}>continue reading...</a></div>
+          </div>
         </div>
       </div>
     </>
