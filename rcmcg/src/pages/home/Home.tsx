@@ -23,14 +23,16 @@ function Body() {
               My name is Reece McGowan.
             </p>
             <p>
-              I am a software developer currently working at <a href={"https://www.visier.com/"}>Visier</a> in beautiful
+              I am a software developer currently working
+              at <a href={"https://www.visier.com/"} target="_blank">Visier</a> in beautiful
               British Columbia. My work currently involves full-stack implementation of workflows leveraging
               generative AI.
             </p>
             <p>
               Previously, I worked on Visier's ETL technology, maintaining and improving the transformation phase. My
-              notable contributions are a <a href={"https://docs.visier.com/developer/Studio/data/de-identification.htm"}>de-identification tool</a> to
-              scrub entities from source data, dramatic reductions
+              notable contributions are
+              a <a href={"https://docs.visier.com/developer/Studio/data/de-identification.htm"} target="_blank">de-identification tool</a>
+              to scrub entities from source data, dramatic reductions
               in batch processing job times, and data visualization for internal stakeholders.
             </p>
             <p>
