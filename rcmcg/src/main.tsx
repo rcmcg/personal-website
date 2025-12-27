@@ -4,10 +4,10 @@ import './index.css'
 import './components/header/header.css'
 import './components/article/article.css'
 import './components/terminal-window/terminal-window.css'
-import './pages/home.css'
-import Home from './pages/Home.tsx'
+import './pages/home/home.css'
+import Home from './pages/home/Home.tsx'
 import {BrowserRouter, Route, Routes} from "react-router";
-import BlogListing from "./pages/BlogListing.tsx";
+import BlogListing from "./pages/blog-listing/BlogListing.tsx";
 import Projects from "./pages/Projects.tsx";
 import ArticlePage from "./pages/ArticlePage.tsx";
 import PhotosPage from "./pages/PhotosPage.tsx";

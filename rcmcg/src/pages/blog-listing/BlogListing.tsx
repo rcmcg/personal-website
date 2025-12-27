@@ -1,5 +1,5 @@
-import Header from "../components/header/Header.tsx";
-import TerminalWindow from "../components/terminal-window/TerminalWindow.tsx";
+import Header from "../../components/header/Header.tsx";
+import TerminalWindow from "../../components/terminal-window/TerminalWindow.tsx";
 
 function BlogListing() {
   return (
