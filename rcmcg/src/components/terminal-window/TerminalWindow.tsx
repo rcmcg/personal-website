@@ -9,7 +9,7 @@ function TerminalWindow() {
             <div className={"terminal-button terminal-button-green"}></div>
           </div>
         </div>
-        <div className={"terminal-main"}>
+        <div className={"terminal-main ibm-plex-mono-regular"}>
           <div>title: init</div>
           <div>created on: Thu Dec 24 08:16:20</div>
           <br/>
