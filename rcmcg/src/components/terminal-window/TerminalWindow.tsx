@@ -15,8 +15,8 @@ function TerminalWindow() {
           <br/>
           <div>rcmcg@M46fedX ~ $</div>
           <div>
-            Welcome to my website! I've always wanted one but I've never taken the plunge. Why? Well, perfectionism
-            (read: ego). Putting something out into the world means being rejected and ...
+            Welcome to my website! I've always wanted one but I've never taken the plunge. Why? Well, ego.
+            Putting something out into the world means being judged and ...
           </div>
           <div>rcmcg@M46fedX ~ $ <a href={"/blog/-1"}>continue reading...</a></div>
         </div>
