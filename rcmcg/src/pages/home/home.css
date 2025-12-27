@@ -34,6 +34,7 @@
     align-items: center;
     height: 100%;
     width: auto;
+    margin-top: 10px;
 }
 
 .main-body {
@@ -62,6 +63,7 @@
 .headshot {
     width: 200px;
     height: 200px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
