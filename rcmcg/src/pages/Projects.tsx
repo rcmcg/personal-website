@@ -4,7 +4,11 @@ function Projects() {
   return (
     <>
       <Header />
-      <h2>Projects</h2>
+      <div className={"main"}>
+        <div className={"main-body"}>
+          <h2>Projects</h2>
+        </div>
+      </div>
     </>
   )
 }
