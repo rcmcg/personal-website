@@ -1,0 +1,10 @@
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-listing-item {
+    margin-top: 16px;
+    width: 100%;
+}
