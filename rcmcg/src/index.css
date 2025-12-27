@@ -75,13 +75,35 @@ a {
 }
 
 .viewing-margin {
-    margin-left: 16em;
-    margin-right: 16em;
+    margin-left: 52em;
+    margin-right: 52em;
 }
 
-@media screen and (width <= 600px) {
+@media screen and (width <= 1440px) {
     .viewing-margin {
-        margin: 0;
+        margin-left: 24em;
+        margin-right: 24em;
+    }
+}
+
+@media screen and (width <= 1024px) {
+    .viewing-margin {
+        margin-left: 12em;
+        margin-right: 12em;
+    }
+}
+
+@media screen and (width <= 768px) {
+    .viewing-margin {
+        margin-left: 6em;
+        margin-right: 6em;
+    }
+}
+
+@media screen and (width <= 425px) {
+    .viewing-margin {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
