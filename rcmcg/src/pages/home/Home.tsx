@@ -14,7 +14,7 @@ function Body() {
             />
           </div>
           <h3 className={"typewriter"}>Software Developer</h3>
-          <h4>Vancouver, BC.</h4>
+          <h4>Vancouver, BC</h4>
           <article className={"about text"}>
             <div className={"about-title"}>
               <h3>About</h3>
@@ -31,8 +31,8 @@ function Body() {
             <p>
               Previously, I worked on Visier's ETL technology, maintaining and improving the transformation phase. My
               notable contributions are
-              a <a href={"https://docs.visier.com/developer/Studio/data/de-identification.htm"} target="_blank">de-identification tool</a>
-              to scrub entities from source data, dramatic reductions
+              a <a href={"https://docs.visier.com/developer/Studio/data/de-identification.htm"} target="_blank">de-identification tool</a> to
+              scrub entities from source data, dramatic reductions
               in batch processing job times, and data visualization for internal stakeholders.
             </p>
             <p>
