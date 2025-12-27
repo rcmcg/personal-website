@@ -10,9 +10,7 @@ function ArticlePage() {
   return (
     <>
       <Header />
-      <div className={"viewing-margin"}>
-        <Article title={"init"} date={"December 24th, 2025"} />
-      </div>
+      <Article title={"init"} date={"December 24th, 2025"} />
     </>
   )
 }

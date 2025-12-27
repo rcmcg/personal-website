@@ -4,9 +4,7 @@ function Projects() {
   return (
     <>
       <Header />
-      <div className={"viewing-margin"}>
-        <h2>Projects</h2>
-      </div>
+      <h2>Projects</h2>
     </>
   )
 }

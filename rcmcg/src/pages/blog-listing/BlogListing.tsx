@@ -5,7 +5,7 @@ function BlogListing() {
   return (
     <>
       <Header />
-      <div className={"viewing-margin blog-list"}>
+      <div className={"blog-list"}>
         <div className={"blog-listing-item"}>
           <TerminalWindow />
         </div>
