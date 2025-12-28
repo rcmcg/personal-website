@@ -12,7 +12,7 @@ logger.info('Started')
 def resize_files(
         src_dir: Annotated[str, typer.Argument(help="Directory containing raw files for processing. These will not be updated")],
         target_dir: Annotated[str, typer.Argument(help="Target directory for modified files.")],
-        new_width_px: Annotated[int, typer.Argument(
+        target_width_px: Annotated[int, typer.Argument(
             help="Target width for all images. The aspect ratio for the height will be preserved. Leave blank to preserve image size. " +
             "This will just strip the metadata."
         )] = -1
@@ -30,14 +30,31 @@ def resize_files(
         logger.info(f"Processing {infile}")
         outfile = target_dir + "/" + filename
         try:
-            with Image.open(infile) as im:
+            with Image.open(infile) as original_im:
+                aspect_ratio = original_im.width / original_im.height
+
+                new_im = original_im
+                if target_width_px > 0:
+                    new_height = calculate_new_height(aspect_ratio, target_width_px)
+                    logger.info(f"Resizing {filename} to {target_width_px}, {new_height}")
+                    new_im = original_im.resize((target_width_px, new_height))
+
                 # TODO This code assumes src_dir is full of JPEG files.
-                im.save(outfile, format='JPEG', subsampling=0, quality=95)
+                new_im.save(outfile, format='JPEG', subsampling=0, quality=95)
                 logger.info(f"Saved {filename} to {outfile}")
         except OSError:
             logger.exception("Failed to save image")
 
     return
+
+
+def calculate_new_height(aspect_ratio: float, target_width: int) -> int:
+    """
+    aspect_ratio = original_width / original_height
+
+    new_height = target_width / aspect_ratio
+    """
+    return int(target_width / aspect_ratio)
 
 if __name__ == "__main__":
     typer.run(resize_files)
