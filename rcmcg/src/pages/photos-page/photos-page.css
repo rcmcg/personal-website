@@ -1,9 +1,16 @@
 .gallery-container {
     display: flex;
     flex-direction: column;
-    max-width: 320px;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery-item {
+    text-align: center;
+    margin-bottom: 32px;
+}
 
+.gallery-item > img {
+    object-fit: contain;
+    max-width: 100%;
 }
