@@ -14,3 +14,11 @@
     object-fit: contain;
     max-width: 100%;
 }
+
+.gallery-item > .caption {
+    margin-bottom: 8px;
+}
+
+.gallery-item > .date {
+    font-size: 14px;
+}

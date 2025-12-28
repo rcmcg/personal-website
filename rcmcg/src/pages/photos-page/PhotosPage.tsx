@@ -10,7 +10,7 @@ function PhotosPage() {
   const photos: Photo[] = [
     {
       url: "/photos/beatty.jpg",
-      caption: "Beatty St., Vancouver, BC",
+      caption: "Early morning on Beatty St., Vancouver, BC",
       date: new Date(2025, 11, 27)
     },
     {
@@ -19,9 +19,9 @@ function PhotosPage() {
       date: new Date(2025, 3, 23)
     },
     {
-      url: "/photos/billboard.jpg",
-      caption: "Foliage being cleared from a billboard",
-      date: new Date(2025, 8, 15)
+      url: "/photos/rbc_gran_fondo_2025.jpg",
+      caption: "View from my starting corral in the RBC Whistler Gran Fond 2025",
+      date: new Date(2025, 8, 6)
     },
     {
       url: "/photos/blood_moon.jpg",
@@ -79,19 +79,9 @@ function PhotosPage() {
       date: new Date(2025, 6, 11)
     },
     {
-      url: "/photos/rbc_gran_fondo_2025.jpg",
-      caption: "View from my starting corral in the RBC Whistler Gran Fond 2025",
-      date: new Date(2025, 8, 6)
-    },
-    {
-      url: "/photos/seymour_park_night.jpg",
-      caption: "A purple light at at night in Seymour Conservation Reserve, BC",
-      date: new Date(2025, 7, 27)
-    },
-    {
-      url: "/photos/stanley_park.jpg",
-      caption: "Boats at night in Stanley Park, BC",
-      date: new Date(2025, 11, 4)
+      url: "/photos/billboard.jpg",
+      caption: "Foliage being cleared from a billboard",
+      date: new Date(2025, 8, 15)
     },
     {
       url: "/photos/tokyo_tower_night_fish.jpg",
@@ -111,11 +101,11 @@ function PhotosPage() {
                 <>
                   <div className={"gallery-item"}>
                     <img src={photo.url} alt={photo.caption}/>
-                    <div>
+                    <div className={"caption"}>
                       {photo.caption}
                     </div>
-                    <div>
-                      {photo.date.toDateString()}
+                    <div className={"date"}>
+                      Date: {photo.date.toDateString()}
                     </div>
                   </div>
                 </>
