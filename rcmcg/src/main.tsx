@@ -6,12 +6,13 @@ import './components/article/article.css'
 import './components/terminal-window/terminal-window.css'
 import './pages/home/home.css'
 import './pages/blog-listing/blog-listing.css'
+import './pages/photos-page/photos-page.css'
 import Home from './pages/home/Home.tsx'
 import {BrowserRouter, Route, Routes} from "react-router";
 import BlogListing from "./pages/blog-listing/BlogListing.tsx";
 import Projects from "./pages/Projects.tsx";
 import ArticlePage from "./pages/ArticlePage.tsx";
-import PhotosPage from "./pages/PhotosPage.tsx";
+import PhotosPage from "./pages/photos-page/PhotosPage.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

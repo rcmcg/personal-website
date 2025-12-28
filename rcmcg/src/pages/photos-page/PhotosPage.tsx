@@ -1,13 +1,18 @@
-import Header from "../components/header/Header.tsx";
+import Header from "../../components/header/Header.tsx";
 
 function PhotosPage() {
+
 
   return (
     <>
       <Header />
       <div className={"main"}>
         <div className={"main-body"}>
-          <h1>Photos</h1>
+          <div className={"gallery-container"}>
+            <div className={"gallery-item"}>
+
+            </div>
+          </div>
         </div>
       </div>
     </>

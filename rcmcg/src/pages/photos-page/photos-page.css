@@ -1,0 +1,9 @@
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+}
+
+.gallery-item {
+
+}
