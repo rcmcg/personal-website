@@ -101,12 +101,6 @@ function PhotosPage() {
                 <>
                   <div className={"gallery-item"}>
                     <img src={photo.url} alt={photo.caption}/>
-                    <div className={"caption"}>
-                      {photo.caption}
-                    </div>
-                    <div className={"date"}>
-                      Date: {photo.date.toDateString()}
-                    </div>
                   </div>
                 </>
               )
