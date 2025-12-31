@@ -15,10 +15,8 @@ function Body() {
           </div>
           <h3 className={"typewriter"}>Software Developer</h3>
           <h4>Vancouver, BC</h4>
-          <article className={"about text"}>
-            <div className={"about-title"}>
-              <h3>About</h3>
-            </div>
+          <article className={"home-section text"}>
+            <h3>About</h3>
             <p>
               My name is Reece McGowan.
             </p>
@@ -39,6 +37,41 @@ function Body() {
               Outside of programming, I enjoy cycling, video games, and coffee.
             </p>
           </article>
+          <div className={"home-section text"}>
+            <h3>Links</h3>
+            <div>
+              <a href={"mailto:reece.mcg@hotmail.com"} className={"social-container"}>
+                <img
+                  src={"/icons/Envelope--Streamline-Unicons.svg"}
+                  alt={"Email reece.mcg@hotmail.com"}
+                  className={"social-link"}
+                />
+                <div>reece.mcg@hotmail.com</div>
+              </a>
+            </div>
+
+            <div >
+              <a href={"https://github.com/rcmcg"} className={"social-container"}>
+                <img
+                  src={"/icons/Github--Streamline-Unicons.svg"}
+                  alt={"Reece McGowan's GitHub"}
+                  className={"social-link"}
+                />
+                <div>rcmcg</div>
+              </a>
+            </div>
+
+            <div>
+              <a href={"https://www.linkedin.com/in/reece-mcgowan/"} className={"social-container"}>
+                <img
+                  src={"/icons/Linkedin--Streamline-Unicons.svg"}
+                  alt={"Reece McGowan's LinkedIn"}
+                  className={"social-link"}
+                />
+                <div>Reece McGowan</div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>
