@@ -11,16 +11,16 @@ function Header() {
         </div>
         <div className={"header header-second-line"}>
           <NavLink to={"/"}>
-            <div className={"header-item"}>home</div>
+            <div className={"header-item header-link"}>home</div>
           </NavLink>
           <NavLink to={"/projects"}>
-            <div className={"header-item"}>projects</div>
+            <div className={"header-item header-link"}>projects</div>
           </NavLink>
           <NavLink to={"/blog"}>
-            <div className={"header-item"}>blog</div>
+            <div className={"header-item header-link"}>blog</div>
           </NavLink>
           <NavLink to={"/photos"}>
-            <div className={"header-item"}>photos</div>
+            <div className={"header-item header-link"}>photos</div>
           </NavLink>
         </div>
       </div>
