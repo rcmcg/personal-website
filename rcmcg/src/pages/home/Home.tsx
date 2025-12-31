@@ -1,5 +1,42 @@
 import Header from "../../components/header/Header.tsx";
 
+function Links() {
+  return (
+    <>
+      <div className={"home-section text"}>
+        <div className={"links-container"}>
+          <div>
+            <a href={"mailto:reece.mcg@hotmail.com"} className={"social-container"}>
+              <img
+                src={"/icons/Envelope--Streamline-Unicons.svg"}
+                alt={"Email reece.mcg@hotmail.com"}
+                className={"social-link"}
+              />
+            </a>
+          </div>
+          <div >
+            <a href={"https://github.com/rcmcg"} className={"social-container"} target={"_blank"}>
+              <img
+                src={"/icons/Github--Streamline-Unicons.svg"}
+                alt={"Reece McGowan's GitHub"}
+                className={"social-link"}
+              />
+            </a>
+          </div>
+          <div>
+            <a href={"https://www.linkedin.com/in/reece-mcgowan/"} className={"social-container"}  target={"_blank"}>
+              <img
+                src={"/icons/Linkedin--Streamline-Unicons.svg"}
+                alt={"Reece McGowan's LinkedIn"}
+                className={"social-link"}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  )
+}
 
 function Body() {
   return (
@@ -15,6 +52,7 @@ function Body() {
           </div>
           <h3 className={"typewriter"}>Software Developer</h3>
           <h4>Vancouver, BC</h4>
+          <Links />
           <article className={"home-section text"}>
             <h3>About</h3>
             <p>
@@ -37,41 +75,6 @@ function Body() {
               Outside of programming, I enjoy cycling, video games, and coffee.
             </p>
           </article>
-          <div className={"home-section text"}>
-            <h3>Links</h3>
-            <div>
-              <a href={"mailto:reece.mcg@hotmail.com"} className={"social-container"}>
-                <img
-                  src={"/icons/Envelope--Streamline-Unicons.svg"}
-                  alt={"Email reece.mcg@hotmail.com"}
-                  className={"social-link"}
-                />
-                <div>reece.mcg@hotmail.com</div>
-              </a>
-            </div>
-
-            <div >
-              <a href={"https://github.com/rcmcg"} className={"social-container"}>
-                <img
-                  src={"/icons/Github--Streamline-Unicons.svg"}
-                  alt={"Reece McGowan's GitHub"}
-                  className={"social-link"}
-                />
-                <div>rcmcg</div>
-              </a>
-            </div>
-
-            <div>
-              <a href={"https://www.linkedin.com/in/reece-mcgowan/"} className={"social-container"}>
-                <img
-                  src={"/icons/Linkedin--Streamline-Unicons.svg"}
-                  alt={"Reece McGowan's LinkedIn"}
-                  className={"social-link"}
-                />
-                <div>Reece McGowan</div>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </>

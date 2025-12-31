@@ -99,4 +99,10 @@
 .social-link {
     width: 24px;
     filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(200deg) brightness(106%) contrast(104%);
+    margin-right: 16px;
+}
+
+.links-container {
+    display: flex;
+    justify-content: center;
 }
