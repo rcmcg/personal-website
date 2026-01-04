@@ -1,0 +1,10 @@
+.project-preview-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.project-preview-list-item > h3 {
+    margin-bottom: 10px;
+}

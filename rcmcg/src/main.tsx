@@ -8,10 +8,11 @@ import './components/project/preview/project-preview.css'
 import './pages/home/home.css'
 import './pages/blog-listing/blog-listing.css'
 import './pages/photos-page/photos-page.css'
+import './pages/projects-page/projects-page.css'
 import Home from './pages/home/Home.tsx'
 import {BrowserRouter, Route, Routes} from "react-router";
 import BlogListing from "./pages/blog-listing/BlogListing.tsx";
-import ProjectsPage from "./pages/ProjectsPage.tsx";
+import ProjectsPage from "./pages/projects-page/ProjectsPage.tsx";
 import ArticlePage from "./pages/ArticlePage.tsx";
 import PhotosPage from "./pages/photos-page/PhotosPage.tsx";
 

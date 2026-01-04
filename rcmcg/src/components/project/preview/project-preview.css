@@ -1,6 +1,7 @@
 .preview-container {
+    max-width: 100%;
     width: 500px;
-    height: 400px;
+    height: 300px;
 }
 
 .preview-img-container {
@@ -14,27 +15,6 @@
     justify-content: space-between;
 }
 
-.preview-img-arrow-background {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    background-color: black;
-    opacity: 0.7;
-    width: 64px;
-    height: 80px;
-    border-radius: 50%;
-}
-
-.preview-img-arrow {
-    position: relative;
-    z-index: 1;
-    font-size: 64px;
-}
-
 .preview-info-container {
     background-color: black;
     border-radius: 0 0 10px 10px;
@@ -43,10 +23,18 @@
 
 .arrow-icon {
     filter: invert(100%);
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50%;
+    margin: 8px;
+}
+
+@media screen and (width < 768px) {
+    .arrow-icon {
+        width: 32px;
+        height: 32px;
+    }
 }
 
 .flipped {

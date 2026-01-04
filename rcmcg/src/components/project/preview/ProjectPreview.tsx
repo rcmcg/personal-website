@@ -52,7 +52,6 @@ function ProjectPreview() {
       }}>
         <ImageCarousel />
         <div className={"preview-info-container"}>
-          <h3>Wild and Brea Artwork</h3>
           <div>Art portfolio website for my sister, Breanna McGowan</div>
           <div>
             <a href={"http://www.wildandbrea.com"} target={"_blank"}>wildandbrea.com</a>
