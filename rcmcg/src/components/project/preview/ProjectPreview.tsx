@@ -4,10 +4,16 @@ function ImageCarousel() {
   const images: string[] = [
     "/projects/preview/wild-and-bre-fullscreen.png",
     "/projects/preview/axe-card-fullscreen.png",
-    "/projects/preview/wild-and-bre-mobile.png",
-    "/projects/preview/floating-head-mobile-preview.png",
+    // "/projects/preview/wild-and-bre-mobile.png",
+    // "/projects/preview/floating-head-mobile-preview.png",
   ]
   const [imageIndex, setImageIndex] = useState(0);
+
+  function handleArrowClick(dir: number) {
+    setImageIndex((idx) => {
+      return (idx + dir) % images.length;
+    })
+  }
 
   return (
     <div
@@ -17,6 +23,12 @@ function ImageCarousel() {
         backgroundImage: `url("${images[imageIndex]}")`
       }}
     >
+      <div onClick={() => handleArrowClick(-1)}>
+        &larr;
+      </div>
+      <div onClick={() => handleArrowClick((1))}>
+        &rarr;
+      </div>
     </div>
   )
 }
