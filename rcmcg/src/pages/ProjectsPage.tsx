@@ -7,7 +7,6 @@ function ProjectsPage() {
       <Header />
       <div className={"main"}>
         <div className={"main-body"}>
-          <h2>Projects</h2>
           <ProjectPreview />
         </div>
       </div>

@@ -9,13 +9,36 @@
     height: 75%;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preview-img-arrow-background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background-color: black;
+    opacity: 0.7;
+    width: 64px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.preview-img-arrow {
+    position: relative;
+    z-index: 1;
+    font-size: 64px;
 }
 
 .preview-info-container {
     background-color: black;
     border-radius: 0 0 10px 10px;
-    padding: 5px;
-    padding-bottom: 10px;
+    padding: 5px 5px 10px;
 }
 
 .preview-arrow {

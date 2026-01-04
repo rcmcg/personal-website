@@ -11,7 +11,7 @@ function ImageCarousel() {
 
   function handleArrowClick(dir: number) {
     setImageIndex((idx) => {
-      return (idx + dir) % images.length;
+      return Math.abs(idx + dir) % images.length;
     })
   }
 
@@ -19,15 +19,20 @@ function ImageCarousel() {
     <div
       className={"preview-img-container"}
       style={{
-        display: "flex",
         backgroundImage: `url("${images[imageIndex]}")`
       }}
     >
-      <div onClick={() => handleArrowClick(-1)}>
-        &larr;
+      <div className={"preview-img-arrow-container"} onClick={() => handleArrowClick(-1)}>
+        <div className={"preview-img-arrow"}>
+          <div className={"preview-img-arrow-background"}></div>
+          &larr;
+        </div>
       </div>
-      <div onClick={() => handleArrowClick((1))}>
-        &rarr;
+      <div className={"preview-img-arrow-container"} onClick={() => handleArrowClick((1))}>
+        <div className={"preview-img-arrow"}>
+          <div className={"preview-img-arrow-background"}></div>
+          &rarr;
+        </div>
       </div>
     </div>
   )
@@ -47,7 +52,7 @@ function ProjectPreview() {
         <div className={"preview-info-container"}>
           <h3>Wild and Brea Artwork</h3>
           <div>Art portfolio website for my sister, Breanna McGowan</div>
-          <a href={"http://www.wildandbrea.com"}>wildandbrea.com</a>
+          <a href={"http://www.wildandbrea.com"} target={"_blank"}>wildandbrea.com</a>
         </div>
       </div>
     </>
