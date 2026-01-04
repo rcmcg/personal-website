@@ -27,12 +27,18 @@ function ImageCarousel() {
           <div className={"preview-img-arrow-background"}></div>
           &larr;
         </div>
+        <img
+          className={"arrow-icon flipped"}
+          src={"/icons/arrow-right-circle.svg"}
+          alt={"left arrow icon"}
+        />
       </div>
       <div className={"preview-img-arrow-container"} onClick={() => handleArrowClick((1))}>
-        <div className={"preview-img-arrow"}>
-          <div className={"preview-img-arrow-background"}></div>
-          &rarr;
-        </div>
+        <img
+          className={"arrow-icon"}
+          src={"/icons/arrow-right-circle.svg"}
+          alt={"right arrow icon"}
+        />
       </div>
     </div>
   )
