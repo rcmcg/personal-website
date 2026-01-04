@@ -23,10 +23,6 @@ function ImageCarousel() {
       }}
     >
       <div className={"preview-img-arrow-container"} onClick={() => handleArrowClick(-1)}>
-        <div className={"preview-img-arrow"}>
-          <div className={"preview-img-arrow-background"}></div>
-          &larr;
-        </div>
         <img
           className={"arrow-icon flipped"}
           src={"/icons/arrow-right-circle.svg"}
@@ -58,7 +54,12 @@ function ProjectPreview() {
         <div className={"preview-info-container"}>
           <h3>Wild and Brea Artwork</h3>
           <div>Art portfolio website for my sister, Breanna McGowan</div>
-          <a href={"http://www.wildandbrea.com"} target={"_blank"}>wildandbrea.com</a>
+          <div>
+            <a href={"http://www.wildandbrea.com"} target={"_blank"}>wildandbrea.com</a>
+          </div>
+          <div>
+            <a href={"https://github.com/rcmcg/wild-and-brea"} target={"_blank"}>github.com/rcmcg/wild-and-brea</a>
+          </div>
         </div>
       </div>
     </>
