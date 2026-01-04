@@ -16,12 +16,18 @@ def resize_files(
             help="Target width for all images. The aspect ratio for the height will be preserved. Leave blank to preserve image size. " +
             "This will just strip the metadata."
         )] = -1,
-        dry_run: Annotated[bool, typer.Argument(help="Log only mode")] = False
+        percentage_reduction: Annotated[float, typer.Argument(
+            help="Percentage to reduce the image quality by. This will be applied to the height and width"
+        )] = -1,
+        dry_run: Annotated[bool, typer.Argument(help="Log only mode")] = False,
 ):
     if not os.path.isdir(src_dir):
-        raise ValueError(f'Provided ${src_dir} is not a directory')
+        raise ValueError(f'Provided srd_dir ${src_dir} is not a directory')
     if not os.path.isdir(target_dir):
-        raise ValueError(f'Provided ${target_dir} is not a directory')
+        raise ValueError(f'Provided target_dir ${target_dir} is not a directory')
+    if percentage_reduction > 1:
+        raise ValueError(f"Provided percentage_reduction [${percentage_reduction}] must be <= 1")
+
 
     directory = os.fsencode(src_dir)
 
@@ -37,10 +43,11 @@ def resize_files(
                 aspect_ratio = original_im.width / original_im.height
 
                 new_im = original_im
-                if target_width_px > 0:
-                    new_height = calculate_new_height(aspect_ratio, target_width_px)
-                    logger.info(f"Resizing {filename} to {target_width_px}, {new_height}")
-                    new_im = original_im.resize((target_width_px, new_height))
+                effective_target_width_px = calculate_target_width_px(target_width_px, percentage_reduction, original_im.width)
+                if effective_target_width_px > 0:
+                    new_height = calculate_new_height(aspect_ratio, effective_target_width_px)
+                    logger.info(f"Resizing {filename} to {effective_target_width_px}x{new_height} from {original_im.width}x{original_im.height}")
+                    new_im = original_im.resize((effective_target_width_px, new_height))
 
                 match extension:
                     case "jpg":
@@ -66,6 +73,13 @@ def calculate_new_height(aspect_ratio: float, target_width: int) -> int:
     new_height = target_width / aspect_ratio
     """
     return int(target_width / aspect_ratio)
+
+def calculate_target_width_px(target_width_px: int, percentage_reduction: float, original_width_px: int) -> int:
+    if percentage_reduction > 0:
+        return int(original_width_px * percentage_reduction)
+    else:
+        return target_width_px
+
 
 if __name__ == "__main__":
     typer.run(resize_files)
