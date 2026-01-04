@@ -4,13 +4,14 @@ import './index.css'
 import './components/header/header.css'
 import './components/article/article.css'
 import './components/terminal-window/terminal-window.css'
+import './components/project/preview/project-preview.css'
 import './pages/home/home.css'
 import './pages/blog-listing/blog-listing.css'
 import './pages/photos-page/photos-page.css'
 import Home from './pages/home/Home.tsx'
 import {BrowserRouter, Route, Routes} from "react-router";
 import BlogListing from "./pages/blog-listing/BlogListing.tsx";
-import Projects from "./pages/Projects.tsx";
+import ProjectsPage from "./pages/ProjectsPage.tsx";
 import ArticlePage from "./pages/ArticlePage.tsx";
 import PhotosPage from "./pages/photos-page/PhotosPage.tsx";
 
@@ -19,7 +20,7 @@ createRoot(document.getElementById('root')!).render(
     <BrowserRouter>
       <Routes>
         <Route path={"/"} element={<Home />}/>
-        <Route path={"/projects"} element={<Projects />}/>
+        <Route path={"/projects"} element={<ProjectsPage />}/>
         <Route path={"/blog"} element={<BlogListing />}/>
         <Route path={"/blog/:articleId"} element={<ArticlePage />}/>
         <Route path={"/photos"} element={<PhotosPage />}/>
